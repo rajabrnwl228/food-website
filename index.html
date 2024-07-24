@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="foodie is a best restaurant having monthly food subscription plans that will make you eat healthy again, 30 days per month. It's tailored to your personal tastes and neutrients need"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/icon-logo.png" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <script defer src="js/script.js"></script>
+    <title>Foodie&mdash; Be hungry</title>
+  </head>
+
+  <body>
+    <!-- ***********part-1************* -->
+    <header class="header sticky">
+      <a href="#">
+        <img
+          src="img/img/foodie-logo1.png"
+          alt="Foodie logo"
+          class="logo"
+        />
+      </a>
+        <form action="" class="search-form">
+          <div class="place" id="placeid">
+           <ion-icon name="location-sharp" class="place-location-icon" ></ion-icon>
+          <input type="text"  placeholder="location" class="place-location-bar" id="location-bar"> 
+          <ion-icon name="caret-up" class="place-location-icon"></ion-icon>
+        </div>
+          <div class="search-form-box" id="search-form-boxid" >
+            <div class="search-form-divider">|</div>
+            <ion-icon name="search-outline" class="search-icon"></ion-icon>
+          <input
+            class="search-bar"
+            type="text"
+            placeholder="Search for a dish"
+            name="search"
+            maxlength="40"
+          />
+        </div>
+          <div class="place-location-box hidden">
+            <div class="locate-address-gps" id="gps">
+              <ion-icon name="locate" class="locate-icon"></ion-icon>
+              <p class="locate-text">Detect Current Location</p>
+            </div>
+            <div class="locate-address-gps" id="Add-address">
+              <ion-icon name="add-outline" class="locate-icon"></ion-icon>
+              <p class="locate-text">Add  Address</p>
+            </div>
+            <div class="locate-address-gps" id="recent-location">
+              <ion-icon name="time-outline" class="locate-icon"></ion-icon>
+              <p class="locate-text">Recent Locations</p>
+            </div>
+          </div>
+        </form>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#meals">Meals</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li>
+            <a class="main-nav-link nav-cta-link" href="#cta">Login/SignUp</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <section class="first-page">
+      <div class="hero">
+        <div class="hero-text-box">
+          <h1 class="hero-heading">
+            People who love to eat are always the best people.
+          </h1>
+          <p class="hero-description">
+            Each dish is meticulously crafted with love and care, mirroring the warmth of a mother's touch.  Indulge in flavors that evoke memories of cherished family meals
+          </p>
+          <div class="hero-button">
+          <a href="#cta" class="btn btn--full ">Start eating well</a>
+          <a href="#" class="btn  btn--outline">Learn more&darr;</a>
+          </div>
+          <div class="delivered-meals">
+            <div class="delivered-imgs">
+              <img src="img/customers/customer-1.jpg" alt="Customer photo" />
+              <img src="img/customers/customer-2.jpg" alt="Customer photo" />
+              <img src="img/customers/customer-3.jpg" alt="Customer photo" />
+              <img src="img/customers/customer-4.jpg" alt="Customer photo" />
+              <img src="img/customers/customer-5.jpg" alt="Customer photo" />
+              <img src="img/customers/customer-6.jpg" alt="Customer photo" />
+            </div>
+            <p class="delivered-text">
+              <span>250,000+</span> meals delivered last year!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***********part-2************* -->
+
+    <section class="top-recipes">
+      <div class="container">
+        <h2 class="top-recipes-heading">Our Top recipes</h2>
+        <div class="top-recipes-box" >
+            <div class="recipes-img-div">
+              <img class="recipes-img" src="img/Top-recipes/veg-briyani.jpeg" alt="recipes"/>
+              <div class="recipes-img-text flex">
+                <p>Rs 149/- only </p>
+              <p class="img-desc">Veg Biryani</p>
+              <p class="img-rat-icon"><ion-icon class="rating-icon" name="star-outline"></ion-icon><span>&nbsp;&nbsp;4.8 rating</span></p>
+              </div>
+            </div>
+        
+            <div class="recipes-img-div">
+              <img class="recipes-img" src="img/Top-recipes/chicken-briyani.jpg" alt="recipes"/>
+              <div class="recipes-img-text flex">
+                <p>Rs 199/- only </p>
+              <p class="img-desc">Chicken Biryani</p>
+              <p class="img-rat-icon"><ion-icon class="rating-icon" name="star-outline"></ion-icon><span>&nbsp;&nbsp;4.7 rating</span></p>
+              </div>
+            </div>
+            
+            
+                <div class="recipes-img-div">
+                  <img class="recipes-img" src="img/Top-recipes/chicken.jpeg" alt="recipes"/>
+                  <div class="recipes-img-text flex">
+                    <p>Rs 199/- only </p>
+                  <p class="img-desc">chicken with rice</p>
+                  <p class="img-rat-icon"><ion-icon class="rating-icon" name="star-outline"></ion-icon><span>&nbsp;&nbsp;4.7 rating</span></p>
+                  </div>
+                </div>
+            <div class="recipes-img-div">
+              <img class="recipes-img" src="img/Top-recipes/paneer-chili.jpeg" alt="recipes"/>
+              <div class="recipes-img-text flex">
+                <p>Rs 149/- only </p>
+              <p class="img-desc">Paneer Roti</p>
+              <p class="img-rat-icon"><ion-icon class="rating-icon" name="star-outline"></ion-icon><span>&nbsp;&nbsp;4.7 rating</span></p>
+            </div>
+          </div>
+          
+            <div class="recipes-img-div">
+              <img class="recipes-img" src="img/Top-recipes/aloo-paratha.jpeg" alt="recipes"/>
+              <div class="recipes-img-text flex">
+                <p>Rs 99/- only </p>
+              <p class="img-desc">Aloo Paratha</p>
+              <p class="img-rat-icon"><ion-icon class="rating-icon" name="star-outline"></ion-icon><span>&nbsp;&nbsp;4.5 rating</span></p>
+              </div>
+            </div>
+        
+            <div class="recipes-img-div">
+              <img class="recipes-img" src="img/Top-recipes/dosa.jpg" alt="recipes"/>
+              <div class="recipes-img-text flex">
+                <p>Rs 99/- only </p>
+              <p class="img-desc">South Dosa</p>
+              <p class="img-rat-icon"><ion-icon class="rating-icon" name="star-outline"></ion-icon><span>&nbsp;&nbsp;4.5 rating</span></p>
+              </div>
+            </div>
+            <div class="recipes-img-div">
+              <img class="recipes-img" src="img/Top-recipes/rajma.png" alt="recipes"/>
+              <div class="recipes-img-text flex">
+                <p>Rs 129/- only </p>
+              <p class="img-desc">rajama chawal</p>
+              <p class="img-rat-icon"><ion-icon class="rating-icon" name="star-outline"></ion-icon><span>&nbsp;&nbsp;4.2 rating</span></p>
+              </div>
+            </div>
+        
+            <div class="recipes-img-div">
+              <img class="recipes-img" src="img/Top-recipes/salad.jpeg" alt="recipes"/>
+              <div class="recipes-img-text flex">
+                <p>Rs 149/- only </p>
+              <p class="img-desc">Mixed Salad</p>
+              <p class="img-rat-icon"><ion-icon class="rating-icon" name="star-outline"></ion-icon><span>&nbsp;&nbsp;4.2 rating</span></p>
+              </div>
+            </div>
+            <div class="recipes-img-div">
+              <img class="recipes-img" src="img/Top-recipes/fried-rice.jpeg" alt="recipes"/>
+              <div class="recipes-img-text flex">
+                <p>Rs 129/- only </p>
+              <p class="img-desc">fried rice</p>
+              <p class="img-rat-icon"><ion-icon class="rating-icon" name="star-outline"></ion-icon><span>&nbsp;&nbsp;4.2 rating</span></p>
+              </div>
+            </div>
+        
+            <div class="recipes-img-div">
+              <img class="recipes-img" src="img/Top-recipes/khichadi.jpeg" alt="recipes"/>
+              <div class="recipes-img-text flex">
+                <p>Rs 99/- only </p>
+              <p class="img-desc">khichadi</p>
+              <p class="img-rat-icon"><ion-icon class="rating-icon" name="star-outline"></ion-icon><span>&nbsp;&nbsp;4.1 rating</span></p>
+              </div>
+            </div>
+            <div class="recipes-img-div">
+              <img class="recipes-img" src="img/Top-recipes/pizza.jpg" alt="recipes"/>
+              <div class="recipes-img-text flex">
+                <p>Rs 199/- only </p>
+              <p class="img-desc">Pizza</p>
+              <p class="img-rat-icon"><ion-icon class="rating-icon" name="star-outline"></ion-icon><span>&nbsp;&nbsp;4.0 rating</span></p>
+              </div>
+              </div>
+            <div class="recipes-img-div">
+              <img class="recipes-img" src="img/Top-recipes/burger.jpeg" alt="recipes"/>
+              <div class="recipes-img-text flex">
+                <p>Rs 149/- only </p>
+              <p class="img-desc">Burger</p>
+              <p class="img-rat-icon"><ion-icon class="rating-icon" name="star-outline"></ion-icon><span>&nbsp;&nbsp;4.0 rating</span></p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="container all-recipes">
+          <a class="link" href="#">See all recipes &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***********part-3************* -->
+
+    <section class="section-how" id="how">
+      <div class="container">
+        <span class="subheading">How it works</span>
+        <h2 class="heading-secondary">
+          Your daily dose of health in 3 simple steps
+        </h2>
+      </div>
+      <div class="section-how-box container grid grid--2-cols grid--center-v">
+        <div class="step-text-box">
+          <p class="step-number">01</p>
+          <h3 class="heading-tertiary">
+            Tell us what you like (and what not)
+          </h3>
+          <p class="step-description">
+            Never again waste time thinking about what to eat! Our
+            will create a 100% personalized weekly meal plan just for you. It
+            makes sure you get all the nutrients and vitamins you need, no
+            matter what diet you follow!
+          </p>
+        </div>
+        <div class="step-img-box">
+          <img src="img\app\app-screen-1.png" class="step-img" alt="iphone-app preferences selection screen" />
+        </div>
+        <div class="step-img-box">
+          <img src="img\app\app-screen-2.png" class="step-img" alt="iphone-app preferences selection screen" />
+        </div>
+        <div class="step-text-box">
+          <p class="step-number">02</p>
+          <h3 class="heading-tertiary">No need to go anywhere</h3>
+          <p class="step-description">Provide your location and we will deliver your order there. You can give each meal-time different location.  
+           
+          </p>
+        </div>
+        <div class="step-text-box">
+          <p class="step-number">03</p>
+          <h3 class="heading-tertiary">Receive meals at convenient time</h3>
+          <p class="step-description">
+            Best chefs in town will cook your selected meal every day, and we
+            will deliver it to your door whenever works best for you. You can
+            change delivery schedule and address daily!
+          </p>
+        </div>
+        <div class="step-img-box">
+          <img src="img\app\app-screen-3.png" class="step-img" alt="iphone-app preferences selection screen" />
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ***********part-5************** -->
+    <section class="section-testimonials " id="testimonials">
+      <div class="testimonial-container">
+        <span class="subheading">Testimonials</span>
+        <h2 class="heading-secondary ">Once you try it, you can't go back
+        </h2>
+        <div class="testimonials">
+          <figure class="testimonial">
+            <img class="testimonial-img" src="img/customers/customer-1.jpg" alt="Dave Bryson" />
+            <blockquote class="testimonial-text">
+              Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly
+              magical.
+              <p class="testimonial-name">&mdash; Dave Bryson</p>
+            </blockquote>
+          </figure>
+          <figure class="testimonial">
+            <img class="testimonial-img" src="img/customers/customer-3.jpg" alt="Ben Hadley" />
+            <blockquote class="testimonial-text">
+              The food is really tasty and healthy.No need to worry about hygenic!
+              <p class="testimonial-name">&mdash; Ben Hadley
+              </p>
+            </blockquote>
+          </figure>
+          <figure class="testimonial">
+            <img class="testimonial-img" src="img/customers/customer-6.jpg" alt="Steve Miller" />
+            <blockquote class="testimonial-text">
+              Foodie is a life saver! I just started a company, so there's no time for cooking. I couldn't live
+              without my daily meals now!
+              <p class="testimonial-name">&mdash; Steve Miller</p>
+            </blockquote>
+          </figure>
+          <figure class="testimonial">
+            <img class="testimonial-img" src="img/customers/customer-4.jpg" alt="Hannah Smith" />
+            <blockquote class="testimonial-text">
+              I got Foodie for the whole family, and it frees up so much time! Plus, everything is organic and vegan
+              and without plastic.
+              <p class="testimonial-name">&mdash; Hannah Smith</p>
+            </blockquote>
+          </figure>
+        </div>
+      </div>
+      <div class="gallery">
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-1.jpg" alt="photo of beautifully arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-2.jpg" alt="photo of beautifully arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-3.jpg" alt="photo of beautifully arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-4.jpg" alt="photo of beautifully arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-5.jpg" alt="photo of beautifully arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-6.jpg" alt="photo of beautifully arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-7.jpg" alt="photo of beautifully arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-8.jpg" alt="photo of beautifully arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-9.jpg" alt="photo of beautifully arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-10.jpg" alt="photo of beautifully arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-11.jpg" alt="photo of beautifully arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-12.jpg" alt="photo of beautifully arranged food" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ***********part-6************** -->
+    <section class="section-pricing" id="pricing">
+      <div class="container">
+        <span class="subheading">Pricing</span>
+        <h2 class="heading-secondary">Eat Healthy Expense less  </h2>
+      </div>
+      <div class="pricing-plan-box grid grid--2-cols margin-bottom-md">
+        <div class="pricing-plan pricing-plan--starter">
+          <header class="plan-header">
+            <p class="plan-name">Starter</p>
+            <p class="plan-price"><span>Rs </span>3999</p>
+            <p class="plan-text">per month. That's just Rs130 per meal!</p>
+          </header>
+          <ul class="list">
+            <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>1 meal per
+            <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>With Salad </span> </li>
+            <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Order from 11am
+                and 10pm</span> </li>
+            <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Delivery is
+                free</span> </li>
+            <li class="list-item"><ion-icon class="list-icon" name="close-outline"></ion-icon> </li>
+          </ul>
+          <div class="plan-sign-up">
+            <a href="#" class="btn btn--full">Start eating well</a>
+          </div>
+        </div>
+        <div class="pricing-plan pricing-plan--complete">
+          <header class="plan-header">
+            <p class="plan-name">Complete</p>
+            <p class="plan-price"><span>Rs </span>6999</p>
+            <p class="plan-text">per month. That's just Rs117 per meal!</p>
+          </header>
+          <ul class="list">
+            <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span><strong>2
+                  meal</strong> per day</span> </li>
+            <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>With Salad </span> </li>
+
+            <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Order
+                <strong>24/7</strong></span> </li>
+            <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Delivery is
+                free</span> </li>
+            <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Get access to
+                latest recipes</span></li>
+          </ul>
+          <div class="plan-sign-up">
+            <a href="#" class="btn btn--full">Start eating well</a>
+          </div>
+        </div>
+      </div>
+      <div class="plan-details-box grid">
+        <aside class="plan-details">Prices include all applicable taxes. Users can cancel at any time.Both plans include
+          the following:
+        </aside>
+      </div>
+      <div class="feature-box grid grid--4-cols">
+        <div class="feature">
+          <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+          <p class="feature-title">Never cook again!</p>
+          <p class="feature-text">Our subscriptions cover 365 days per year, even including major holidays.</p>
+        </div>
+
+        <div class="feature">
+          <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+          <p class="feature-title"> Local and organic</p>
+          <p class="feature-text">Our cooks only use local, fresh, and organic products to prepare your meals.</p>
+        </div>
+
+        <div class="feature">
+          <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+          <p class="feature-title">No waste</p>
+          <p class="feature-text">All our partners only use reusable containers to package all your meals.</p>
+        </div>
+        <div class="feature">
+          <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
+          <p class="feature-title">Pause anytime</p>
+          <p class="feature-text">Going on vacation? Just pause your subscription, and we refund unused days.</p>
+        </div>
+      </div>
+    </section>
+    <!-- ***********part-7************** -->
+
+    <section class="section-cta" id="cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">
+              Get your first meal for free</h2>
+            <p class="cta-text">
+              Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause
+              anytime. And the first meal is on us!
+            </p>
+
+
+            <form class="cta-form" action="#">
+              <div>
+                <label for="full-name">Full Name</label>
+                <input id="full-name" type="text" placeholder="John Smith" required />
+              </div>
+              <div>
+                <label for="email">Email Address</label>
+                <input id="email" type="email" placeholder="me@gmail.com" required />
+              </div>
+              <div>
+                <label for="select-where">Where did you hear from us?</label>
+                <select id="select-where" required>
+                  <option value="">Please choose one option:</option>
+                  <option value="friends">Friends and family</option>
+                  <option value="youtube">Youtube Video</option>
+                  <option value="podcast">Podcast</option>
+                  <option value="ad">Facebook ad</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+              <button class="btn btn--form"> Sign up now"</button>
+            </form>
+          </div>
+          <div class="cta-img-box" role="img" aria-label="women enjoying food">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ***********part-8************** -->
+
+  <footer class="footer">
+    <div class="container grid grid-footer">
+      <div class="logo-col">
+        <a href="#" class="footer-logo"> <img src="img\Foodie-logo.png" alt="Foodie logo" class="logo" />
+        </a>
+        <ul class="social-links">
+          <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon> </a> </li>
+          <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon> </a> </li>
+          <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon> </a> </li>
+        </ul>
+        <p class="copyright">
+          Copyright &copy;<span class="year">2027</span> by Foodie, Inc.All rights reserved.
+        </p>
+      </div>
+      <div class="address-col">
+        <p class="footer-heading">Contact us</p>
+        <address class="contact">
+          <p class="address">Hotel Banquite, 2nd floor, Jhumri Telaiya
+          </p>
+          <p><a class="footer-link" href="tel: 415-201-6370">449-382-9833</a><br>
+            <a class="footer-link" href="mailto:hello@Foodie.com">Foodie@gmail.com</a>
+          </p>
+        </address>
+      </div>
+      <nav class="nav-col">
+        <p class="footer-heading">Account</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">Create account</a></li>
+          <li><a class="footer-link" href="#">Sign in</a></li>
+          <li><a class="footer-link" href="#">iOS app</a></li>
+          <li><a class="footer-link" href="#">Android app</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-col">
+        <p class="footer-heading">Company</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">About Foodie</a></li>
+          <li><a class="footer-link" href="#">For Business</a></li>
+          <li><a class="footer-link" href="#">Cookiing partners</a></li>
+          <li><a class="footer-link" href="#">Careers</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-col">
+        <p class="footer-heading">Resources</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">Recipe directory</a></li>
+          <li><a class="footer-link" href="#">Help center</a></li>
+          <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          <li><a class="footer-link" href="#">Android app</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
+  </body>
+</html>
