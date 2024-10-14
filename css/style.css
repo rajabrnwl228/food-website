@@ -652,3 +652,9 @@
 .hidden {
   display: none;
 }
+.page-login {
+  border: none;
+}
+.login-btn {
+  border: none;
+}

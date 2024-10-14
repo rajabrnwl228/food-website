@@ -19,16 +19,107 @@
     <link rel="stylesheet" href="css/queries.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="login/login.css" />
     
   <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
   <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-  <script defer src="js/script.js"></script>
+
     <title>Foodie&mdash; Be hungry</title>
   </head>
 
   <body>
+    <div class="login--container hidden" id="login--container">
+      <div class="login--login" id="login--login">
+        <div class="login--side-bar" id="login--login-side-left">
+          <h1>Create Account</h1>
+          <div class="social-login">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p>or use your email for registration</p>
+          <form action="#" class="login--login-form">
+            <div id="signUpMessage" class="messageDiv" style="display: none"></div>
+
+            <input
+            id="username"
+              type="text"
+              placeholder="Name"
+              class="login--form-input"
+              autofocus
+            />
+            <input
+            id="useremail"
+            type="email"
+            placeholder="Email"
+            class="login--form-input"
+            autofocus
+            />
+            <input
+             id="userpassword"
+              type="password"
+              placeholder="Password"
+              class="login--form-input"
+              autofocus
+            />
+            <button class="login--login-form-btn"id="login--login-form-signUpbtn">Sign Up</button>
+          </form>
+        </div>
+        <div
+          class="login--side-bar login--overlay-pannel"
+          id="login--overlay-right"
+        >
+          <h1>Welcome Back!</h1>
+          <p>To keep connected with us please login with your personal info</p>
+          <button class="login--login-form-btn login--overlay-btn" id="signIn">
+            Sign In
+          </button>
+        </div>
+        <div
+          class="login--side-bar login--overlay-pannel hidden"
+          id="login--overlay-left"
+        >
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and start journey with us</p>
+          <button id="login--signUp" class="login--login-form-btn overlay-btn">
+            Sign Up
+          </button>
+        </div>
+        <div class="login--side-bar hidden" id="login--login-side-right">
+            <div id="signInMessage" class="messageDiv" style="display: none"></div>
+          <h1>Sign In</h1>
+           <div id="signUpMessage" class="messageDiv" style="display: none"></div>
+
+          <div class="social-login">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p>or use your email for sign up</p>
+          <form action="#" class="login--login-form">
+            <input
+            id="userSignemail"
+              type="email"
+              placeholder="Email"
+              class="login--form-input"
+              autofocus
+            />
+            <input
+            id="userSignpassword"
+              type="password"
+              placeholder="Password"
+              class="login--form-input"
+              autofocus
+            />
+            <a href="#">Forgot your password?</a>
+            <button class="login--login-form-btn" id="login--login-form-signInbtn">Sign In</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <!-- ***********part-1************* -->
+     <div class="page--hidden" id="page--hidden">
     <header class="header sticky">
       <a href="#">
         <img
@@ -77,9 +168,9 @@
             <a class="main-nav-link" href="#testimonials">Testimonials</a>
           </li>
           <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
-          <li>
-            <a class="main-nav-link nav-cta-link" href="#cta">Login/SignUp</a>
-          </li>
+          <button class="login-btn" id="login-btn">
+              <a class="login main-nav-link nav-cta-link" href="#login" id="page-login">Login</a>
+            </button>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -545,9 +636,10 @@
     </div>
 
   </footer>
+</div>
+<script defer src="login/login.js"></script>
+<script type="module" src="js/firebase.js"></script>
+<script defer src="js/script.js"></script>
 
 </body>
-
-</html>
-  </body>
 </html>

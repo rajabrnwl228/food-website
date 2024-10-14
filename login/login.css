@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+* {
+  box-sizing: border-box;
+}
+
+.login--login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 1000px;
+  height: 500px;
+  /* border: 3px solid rgb(255, 119, 0); */
+  box-shadow: 8px 8px 100px #444;
+  background-color: #ff770f;
+  border-radius: 12px;
+}
+.login--side-bar {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  padding: 32px;
+}
+.login--login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+login--h1 {
+  font-size: 32px;
+}
+login--p {
+  font-size: 22px;
+}
+.login--form-input {
+  font-size: 24px;
+  padding: 6px 18px;
+  border-radius: 8px;
+}
+.login--login-form-btn {
+  margin: 0 auto;
+  margin-top: 32px;
+  padding: 10px 22px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #fff;
+  width: fit-content;
+  border-radius: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+.login--overlay-pannel {
+  background-color: #ff7410;
+  color: #fff;
+  z-index: 2;
+}
+
+.login--overlay-pannel h1 {
+  font-size: 36px;
+}
+.login--overlay-pannel p {
+  font-size: 24px;
+}
+.login--overlay-btn {
+  border: 2px solid #fff;
+  background-color: #ff7410;
+  color: #fff;
+}
+login--a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #ff7410;
+}
+.hidden {
+  display: none;
+  opacity: 0;
+}
